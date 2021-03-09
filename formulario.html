@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="forms.css" media="screen">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2 id = "titulo">Cadastramento</h2>
+        <h3 id = "subtitulo">Faça seu cadastro para obter novidades!</h3>
+        <br>
+    </div>
+    <form>
+        <fieldset class = "grupo">
+            <div class = "campo">
+                <label for = "nome"><strong>Nome Completo</strong></label>
+                <input type ="nome" nome ="Seu Nome" id = "nome" required> 
+            </div>
+            <div class = "campo">
+                <label for = "email"><strong>E-mail</strong></label>
+                <input type ="email" nome = "email" id = "email" required>
+            </div>
+            <div class = "campo">
+                <label><strong>Whatsapp</strong></label>
+                <input type = "number" nome = "numero" id = "numero">
+            </div>
+            <div class = "campo">
+                <label> <strong>Quais conteúdos você gostaria de obter informações?</strong></label>
+            </div>
+            <div class = "grupo"> 
+                <label>
+                    <input type = "radio" nome = "opçao1" value = "Assunto1" > Assunto 1
+                </label>
+            </div>
+            <div class = "grupo">
+                <label>
+                <input type = "radio" nome = "opçao2" value = "Assunto2"> Assunto 2
+            </label>
+            </div>
+            <div class = "grupo">
+                <label>
+                <input type = "radio" nome = "opçao3" value = "Assunto3"> Assunto 3
+            </label>
+            </div>
+            <fieldset class = "grupo">
+                <br>
+                <label for = "escolhas"> <strong> Selecione os assuntos que você mais curte: </strong></label> <br>
+                <div>
+                    <input type ="checkbox" nome = "assunto1" value = "Programação">
+                    <label for="assunto1">Programação</label> <br>
+                    <input type ="checkbox" nome = "assunto2" value = "Leitura"> 
+                    <label for="assunto2">Leitura</label> <br>
+                    <input type ="checkbox" nome = "assunto3" value = "Anime"> 
+                    <label for="assunto3">Anime</label> <br>
+                    <input type ="checkbox" nome = "assunto4" value = "Comidas"> 
+                    <label for="assunto4">Comida</label> <br>
+                </div>
+                
+            </fieldset>
+            <br>
+            <div class = "campo">
+                <label>   <strong> Fale um pouco sobre você </strong>   </label> <br>
+                <textarea name="Sobre" id="Sobre" cols="30" rows="5" width="20cm"></textarea>
+            </div>
+            <button class = "botao" type="submit">Finalizar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
